@@ -64,7 +64,6 @@ const ModalForm = () => {
     );
     const data = await response.json();
     console.log(data);
-    router.push("/result");
     router.push({
       pathname: "/result",
       query: {
@@ -124,7 +123,7 @@ const ModalForm = () => {
             onChange={handleYearChange}
           >
             {years.map((year) => (
-              <MenuItem key={year} value={year.codigo}>
+              <MenuItem key={year.codigo} value={year.codigo}>
                 {year.nome}
               </MenuItem>
             ))}
