@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
-import { useDispatch } from "react-redux";
-import React, { useState, useEffect, createContext, useContext } from "react";
+import React, { useContext } from "react";
 import { CarSelectionContext } from "@/pages";
 import {
   Button,
